@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  libreoffice:
+    build: .
+    ports:
+      - "3391:3389"
+    restart: unless-stopped

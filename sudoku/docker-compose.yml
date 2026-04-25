@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  sudoku:
+    build: .
+    ports:
+      - "3389:3389"
+    restart: unless-stopped

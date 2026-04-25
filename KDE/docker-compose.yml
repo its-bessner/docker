@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  kde:
+    build: .
+    ports:
+      - "3393:3389"
+    restart: unless-stopped

@@ -1,0 +1,51 @@
+table {
+  width: 100%; }
+
+table, th {
+  border-collapse: collapse; }
+
+th {
+  font-weight: bold; }
+
+th, td {
+  font-size: 15pt;
+  padding: 6px 5px; }
+
+.selected {
+  color: white; }
+
+.head {
+  background: #215a7e;
+  color: white; }
+
+.even {
+  background-color: #3782bd; }
+  .even.selected {
+    background-color: #265982; }
+  .even.active {
+    background-color: #9dadba; }
+    .even.active.selected {
+      background-color: #70879a; }
+
+.highlight {
+  background: #ffb700; }
+  .highlight.selected {
+    background: #b38000; }
+  .highlight .selected {
+    border-top: 1pt solid white !important;
+    border-bottom: 1pt solid white !important; }
+
+body {
+  background: #1669aa; }
+
+table, td {
+  border: solid 1pt white; }
+
+table {
+  table-layout: fixed; }
+  table th, table td {
+    text-align: center; }
+  table th {
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */

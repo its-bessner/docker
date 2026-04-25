@@ -1,0 +1,95 @@
+$backgroundDefault: #1669aa;
+$backgroundDefaultActive: #a1aab1;
+$backgroundDefaultSelected: #dbe3ea;
+$backgroundDefaultSelectedActive: #84878a;
+$backgroundHead: #215a7e;
+$colorHead: white;
+$backgroundEven: #3782bd;
+$backgroundEvenActive: #9dadba;
+$backgroundHighlight: #ffb700;
+//$backgroundHighlight: #0ee8d6;
+$colorSelected: white;
+
+
+$lightRate: 15%;
+$borderWidth: 1pt;
+$borderColor: white;
+
+table {
+  width: 100%;
+}
+
+table, th {
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: bold;
+}
+
+th, td {
+  font-size: 15pt;
+  padding: 6px 5px;
+}
+
+.selected {
+  color: $colorSelected;
+}
+
+.head {
+  background: $backgroundHead;
+  color: $colorHead;
+}
+
+.even {
+  background-color: $backgroundEven;
+
+  &.selected {
+    background-color: darken($backgroundEven, $lightRate);
+  }
+
+  &.active {
+    background-color: $backgroundEvenActive;
+
+    &.selected {
+      background-color: darken($backgroundEvenActive, $lightRate);
+    }
+  }
+}
+
+
+.highlight {
+  background: $backgroundHighlight;
+
+  &.selected {
+    background: darken($backgroundHighlight, $lightRate);
+  }
+
+
+
+
+  .selected {
+    border-top: $borderWidth solid $borderColor !important;
+    border-bottom: $borderWidth solid $borderColor !important;
+  }
+}
+
+body {
+  background: $backgroundDefault;
+}
+
+
+
+table,td {
+  border:  solid $borderWidth $borderColor;
+}
+
+table {
+  table-layout: fixed;
+  th,td {
+    text-align: center;
+  }
+  th {
+    color : $colorHead;
+  }
+}
