@@ -1,8 +1,8 @@
 version: "3.8"
 
 services:
-  sudoku:
+  minesweeper:
     build: .
     ports:
-      - "3395:3389"
+      - "3398:3389"
     restart: unless-stopped

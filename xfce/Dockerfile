@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     xfce4 xfce4-goodies \
     libreoffice vim firefox \
+    gnome-mindes gnome-sudoku \
     xrdp xorgxrdp dbus-x11 \
     locales language-pack-de \
     && locale-gen de_DE.UTF-8 \
